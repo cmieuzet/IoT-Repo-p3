@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-p3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-p3
+  template:
+    metadata:
+      labels:
+        app: app-p3
+    spec:
+      containers:
+        - name: app-p3
+          image: nginx
+          ports:
+            - containerPort: 80
