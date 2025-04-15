@@ -16,4 +16,4 @@ spec:
         - name: app-p3
           image: wil42/playground:v2
           ports:
-            - containerPort: 80
+            - containerPort: 8888
